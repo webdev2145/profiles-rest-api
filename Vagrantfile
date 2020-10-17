@@ -71,7 +71,7 @@ Vagrant.configure("2") do |config|
     systemctl disable apt-daily.service
     systemctl disable apt-daily.timer
 
-    sudo apt-get update
+    sudo apt-get updatehttps://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
     sudo apt-get install -y python3-venv zip
     touch /home/vagrant/.bash_aliases
     if ! grep -q PYTHON_ALIAS_ADDED /home/vagrant/.bash_aliases; then
